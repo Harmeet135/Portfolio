@@ -7,10 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-// template_ypw9ynx
-// service_icvkjnt
-// rTGGf2igXEjUpWKsn
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -22,7 +18,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { target } = e;
+    const { name, value } = target;
 
     setForm({
       ...form,
@@ -35,18 +32,19 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send('service_8pe1zew',
-        'template_ypw9ynx',
-   
-        {
-          from_name: form.name,
-          to_name: "Harmeet",
-          from_email: form.email,
-          to_email: "harmeetchahal9891@gmail.com",
-          message: form.message,
-        },
-        'rTGGf2igXEjUpWKsn'
-      )
+    .send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+  
+      {
+        from_name: `${form.name}`,
+        from_email: form.email,
+        to_name: "Harmeet",
+        to_email: "harmeetchahal9891@gmail.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+    )
       .then(
         () => {
           setLoading(false);
