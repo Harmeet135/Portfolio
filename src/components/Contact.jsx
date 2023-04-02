@@ -22,8 +22,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e.target;
 
     setForm({
       ...form,
@@ -36,7 +35,9 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-     
+      .send('service_8pe1zew',
+        'template_ypw9ynx',
+   
         {
           from_name: form.name,
           to_name: "Harmeet",
@@ -44,6 +45,7 @@ const Contact = () => {
           to_email: "harmeetchahal9891@gmail.com",
           message: form.message,
         },
+        'rTGGf2igXEjUpWKsn'
       )
       .then(
         () => {
