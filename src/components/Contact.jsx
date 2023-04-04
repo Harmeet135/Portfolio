@@ -32,19 +32,19 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-    .send(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-  
-      {
-        from_name: `${form.name}`,
-        from_email: form.email,
-        to_name: "Harmeet",
-        to_email: "harmeetchahal9891@gmail.com",
-        message: form.message,
-      },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-    )
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+
+        {
+          from_name: `${form.name}`,
+          from_email: form.email,
+          to_name: "Harmeet",
+          to_email: "harmeetchahal9891@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+      )
       .then(
         () => {
           setLoading(false);
@@ -122,6 +122,19 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <button
+          type='submit'
+          className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+        >
+          <h1>Github</h1>
+        </button>
+        <button
+
+          className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+          onClick={() => window.open('https://github.com/Harmeet135')}
+        >
+          <h1>Linkedin</h1>
+        </button>
       </motion.div>
 
       <motion.div
