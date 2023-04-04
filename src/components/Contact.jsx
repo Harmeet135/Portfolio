@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { VscGithub } from "react-icons/vsc";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const formRef = useRef();
@@ -114,27 +116,32 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-
+          <div className="grid grid-cols-3 justify-items-center" >
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </form>
-        <button
-          type='submit'
+
+          <button
+           onClick={() => window.open('https://github.com/Harmeet135')}
           className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
         >
-          <h1>Github</h1>
+          <FaLinkedin  className="h-5 w-auto "/>
         </button>
         <button
 
           className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           onClick={() => window.open('https://github.com/Harmeet135')}
         >
-          <h1>Linkedin</h1>
+        <VscGithub className="h-5 w-auto " />
         </button>
+         </div>
+        </form>
+      
+
+       
       </motion.div>
 
       <motion.div
