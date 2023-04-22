@@ -6,8 +6,8 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import Extrawork from "./Extrawork";
+import { fadeIn, textVariant  ,fadeOut} from "../utils/motion";
+import { Appear } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -16,10 +16,11 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      
+
       <Tilt
         options={{
           max: 45,
@@ -72,8 +73,7 @@ const ProjectCard = ({
 const Works = () => {
 
   const [showAll, setShowAll] = useState(false);
-  const visibleProjects = showAll ? projects : projects.slice(0, 3);
-  console.log(visibleProjects);
+  const visibleProjects = showAll ? projects.slice(0, projects.length) : projects.slice(0, 3);
 
   return (
     <>
@@ -95,17 +95,38 @@ const Works = () => {
         </motion.p>
       </div>
 
-    
-    <div className='mt-20 flex flex-wrap gap-7'>
-    {visibleProjects.map((project, index) => (
-        <ProjectCard key={`project-${index}`} index={index} {...project} />
+
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {visibleProjects.map((project, index) => (
+
+          <motion.div >
+            <ProjectCard
+              key={`project-${index}`}
+              // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+              // animate="show"
+              custom={index}  {...project}
+              // variants={showAll ? fadeIn("up", "spring", index * 0.5, 0.75) : fadeOut("up", "spring", index * 0.5, 0.75)}
+              initial="hidden"
+              animate="show"
+              exit="exit"
+            />
+          </motion.div>
         ))}
+
       </div>
-      <div className=''>
-      <Extrawork />
+      <div className='flex justify-center'>
+        <button
+          className={` mb-20 font-bold text-lg z-10000 absolute ${showAll ? "mt-[8rem]" : "mt-8"}`}
+          onClick={() => setShowAll(!showAll)}
+          variants={Appear("down", "spring", 0, 0.5)}
+          initial="hidden"
+          animate="show"
+          exit="hide"
+        >
+          {showAll ? "Show Less" : "Show More"}
+        </button>
       </div>
 
-     
     </>
   );
 };

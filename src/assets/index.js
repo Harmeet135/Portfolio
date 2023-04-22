@@ -32,6 +32,7 @@ import amb from "./company/amb.png";
 
 import carrent from "./carrent.png";
 import chatters from "./chatters.png";
+import electronic from "./electronic.png"
 import memories from "./memories.png";
 import shoestore from "./shoestore.png";
 import taskify from "./taskify.png";
@@ -71,6 +72,7 @@ export {
   shoestore,
   taskify,
   chatters,
+  electronic,
   memories,
   jobit,
   tripguide,

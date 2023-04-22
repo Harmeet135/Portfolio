@@ -23,6 +23,7 @@ import {
     shoestore,
     taskify,
     chatters,
+    electronic,
     memories,
     jobit,
     tripguide,
@@ -133,10 +134,10 @@ import {
       iconBg: "#383E56",
       date: "Sept 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed Aztec Curve Swap Bridge as a blockchain dev intern and tested the bridge, while also documenting the code and its functionality.",
+        "Designed and implemented a new Bridge for Curve, enabling ETH/DAI/OTHER TOKENS swapping via Curve pools, by studying existing bridges and utilizing previous experience with blockchain development.",
+        "Created comprehensive tests for both Aztec Curve Swap Bridge and the new Curve Bridge, utilizing Forge(Foundry) to ensure their proper functioning.",
+        "Developed a Uniswap LP (Liquidity Provider) Bridge and a Collateral plugin for wsOHM, showcasing versatility and proficiency in various blockchain development tasks.",
       ],
     },
     {
@@ -208,25 +209,26 @@ import {
       source_code_link: "https://github.com/Harmeet135/Socials",
     },
     {
-      name: "chatters",
+      name: "electronic",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
-          name: "Python",
+          name: "Nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "Django",
+          name: "Sanity.io",
+        
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+        // {
+        //   name: "Django",
+        //   color: "pink-text-gradient",
+        // },
       ],
-      image: chatters,
-      source_code_link: "https://github.com/Harmeet135/Chatters",
+      image: electronic,
+      source_code_link: "https://github.com/Harmeet135/Electonic-market-place",
     },
     {
       name: "chatters",
