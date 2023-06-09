@@ -48,6 +48,10 @@ import {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "resume",
+      title: "Resume",
+    },
   ];
   
   const services = [
@@ -145,7 +149,7 @@ import {
       company_name: "Add My Brand",
       icon: amb,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Jan 2023 - March 2023",
       points: [
         "Developing and maintaining web applications using Next.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,38 +159,23 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     testimonial:
+  //       "I thought it was impossible to make a website as beautiful as our product.",
+  //     name: "xyz",
+  //     designation: "CFO",
+  //     company: "Teckstack",
+  //     image: "https://randomuser.me/api/portraits/women/4.jpg",
+  //   },
+
+  // ];
   
   const projects = [
     {
       name: "Socials",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Socials is a user-friendly web application that allows you to effortlessly share your thoughts, experiences, and moments with the world. You can log in, upload and delete posts, add descriptions and hashtags, and keep track of creation time for each post.",
       tags: [
         {
           name: "Reactjs",
@@ -209,9 +198,9 @@ import {
       source_code_link: "https://github.com/Harmeet135/Socials",
     },
     {
-      name: "electronic",
+      name: "E - mart ",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "E-Mart is a cutting-edge web application that brings the convenience of online shopping to your fingertips. With E-Mart, you can explore a vast collection of electronic products, purchase items with ease, and discover recommended and best-selling products tailored to your interests.",
       tags: [
         {
           name: "Nextjs",
@@ -231,9 +220,9 @@ import {
       source_code_link: "https://github.com/Harmeet135/Electonic-market-place",
     },
     {
-      name: "chatters",
+      name: "Chatters",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web-based platform that dynamic provies platform for individuals to create their own rooms, join existing ones, and connect with their know ones from around the world.",
       tags: [
         {
           name: "Python",
@@ -252,9 +241,9 @@ import {
       source_code_link: "https://github.com/Harmeet135/Chatters",
     },
     {
-      name: "Task/Gaols",
+      name: "Task Tracker",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "TaskTracker is a convenient and efficient mobile application designed to help you stay organized and manage your tasks effectively. With TaskTracker, you can easily create, track, and mark tasks as completed, ensuring that you stay on top of your responsibilities and achieve your goals.",
       tags: [
         {
           name: "Python",
@@ -300,7 +289,7 @@ import {
     {
       name: "Taskify",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Taskify is a powerful and interactive web application built upon the foundation of TaskTracker. With Taskify, not only can you effectively manage your tasks, but you can also experience the convenience of dragging tasks from the active list to the completed list, and vice versa. Taskify enhances your task management experience with a dynamic interface and seamless task transitions.",
       tags: [
         {
           name: "nextjs",
@@ -324,4 +313,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences,  projects };
