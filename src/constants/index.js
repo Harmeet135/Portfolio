@@ -5,6 +5,19 @@ import {
     web,
     javascript,
     typescript,
+    html1,
+    css1,
+    express1,
+    firebase1,
+    git1,
+    mongodb1,
+    python1,
+    nextjs1,
+    react1,
+    nodejs1,
+    cplus1,
+    solidity1,
+    tailwind1,
     html,
     css,
     reactjs,
@@ -19,14 +32,11 @@ import {
     starbucks,
     amb,
     ts,
-    carrent,
     shoestore,
     taskify,
     chatters,
     electronic,
     memories,
-    jobit,
-    tripguide,
     threejs,
     solidity,
     nextjs,
@@ -127,23 +137,78 @@ import {
       name: "cplus",
       icon: cplus,
     },
+ 
   
   ];
+
+  const tech = [
+    {
+      name: "HTML 5",
+      icon: html1,
+    },
+    {
+      name: "css 3",
+      icon: css1,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "react1",
+      icon: react1,
+    },
+    {
+      name: "tailwind1",
+      icon: tailwind1,
+    },
+    {
+      name: "nodejs1",
+      icon: nodejs1,
+    },
+    {
+      name: "mongodb1",
+      icon: mongodb1,
+    },
+    {
+      name: "python1",
+      icon: python1,
+    },
+    {
+      name: "git1",
+      icon: git1,
+    },
+    {
+      name: "firebase1",
+      icon: firebase1,
+    },
+    {
+      name: "express1",
+      icon: express1,
+    },
+  
+    {
+      name: "nextjs1",
+      icon: nextjs1,
+    },
+    {
+      name: "solidity1",
+      icon: solidity1,
+    },
+    {
+      name: "cplus1",
+      icon: cplus1,
+    },
+  
+   
+  ]
+
   
   const experiences = [
-    {
-      title: "Blockchain Developer",
-      company_name: "Teckstack",
-      icon: ts,
-      iconBg: "#383E56",
-      date: "Sept 2022 - Jan 2023",
-      points: [
-        "Developed Aztec Curve Swap Bridge as a blockchain dev intern and tested the bridge, while also documenting the code and its functionality.",
-        "Designed and implemented a new Bridge for Curve, enabling ETH/DAI/OTHER TOKENS swapping via Curve pools, by studying existing bridges and utilizing previous experience with blockchain development.",
-        "Created comprehensive tests for both Aztec Curve Swap Bridge and the new Curve Bridge, utilizing Forge(Foundry) to ensure their proper functioning.",
-        "Developed a Uniswap LP (Liquidity Provider) Bridge and a Collateral plugin for wsOHM, showcasing versatility and proficiency in various blockchain development tasks.",
-      ],
-    },
     {
       title: "Next.js Developer",
       company_name: "Add My Brand",
@@ -157,6 +222,20 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    {
+      title: "Blockchain Developer",
+      company_name: "Teckstack",
+      icon: ts,
+      iconBg: "#383E56",
+      date: "Sept 2022 - Jan 2023",
+      points: [
+        "Developed Aztec Curve Swap Bridge as a blockchain dev intern and tested the bridge, while also documenting the code and its functionality.",
+        "Designed and implemented a new Bridge for Curve, enabling ETH/DAI/OTHER TOKENS swapping via Curve pools, by studying existing bridges and utilizing previous experience with blockchain development.",
+        "Created comprehensive tests for both Aztec Curve Swap Bridge and the new Curve Bridge, utilizing Forge(Foundry) to ensure their proper functioning.",
+        "Developed a Uniswap LP (Liquidity Provider) Bridge and a Collateral plugin for wsOHM, showcasing versatility and proficiency in various blockchain development tasks.",
+      ],
+    },
+  
   ];
   
   // const testimonials = [
@@ -313,4 +392,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences,  projects };
+  export { services, technologies, experiences,  projects , tech };

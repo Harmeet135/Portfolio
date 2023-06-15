@@ -14,6 +14,21 @@ import solidity from "./tech/solidity.png";
 import nextjs from "./tech/nextjs.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+
+import html1 from "./tech/html1.svg";
+import css1 from "./tech/css1.svg";
+import express1 from "./tech/express1.svg";
+import firebase1 from "./tech/firebase1.svg";
+import git1 from "./tech/git1.svg";
+import mongodb1 from "./tech/mongodb1.svg";
+import python1 from "./tech/python1.svg";
+import nextjs1 from "./tech/nextjs1.svg";
+import nodejs1 from "./tech/nodejs1.svg";
+import solidity1 from "./tech/solidity1.png";
+import tailwind1 from "./tech/tailwind1.svg";
+import react1 from "./tech/react1.png";
+import cplus1 from "./tech/cplus1.png";
+
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -30,14 +45,12 @@ import ts from "./company/ts.png";
 import starbucks from "./company/starbucks.png";
 import amb from "./company/amb.png";
 
-import carrent from "./carrent.png";
 import chatters from "./chatters.png";
 import electronic from "./electronic.png"
 import memories from "./memories.png";
 import shoestore from "./shoestore.png";
 import taskify from "./taskify.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 import native from "./native.png";
 
 export {
@@ -60,22 +73,32 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  react1,
   redux,
   tailwind,
   typescript,
+  html1,
+  css1,
+  cplus1,
+  express1,
+  firebase1,
+  git1,
+  mongodb1,
+  python1,
+  nextjs1,
+  nodejs1,
+  solidity1,
+  tailwind1,
   threejs,
   meta,
   ts,
   starbucks,
   amb,
-  carrent,
   shoestore,
   taskify,
   chatters,
   electronic,
   memories,
-  jobit,
-  tripguide,
   cplus,
   python,
   native,

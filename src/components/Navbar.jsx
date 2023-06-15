@@ -26,6 +26,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (nav) => {
+    setActive(nav.title);
+    if (nav.id === "resume") {
+      window.open(cvv, '_blank'); 
+    } else {
+      window.scrollTo(0, 0);
+    }
+    setToggle(false);
+  };
+
   return (
     <nav
       className={`${styles.paddingX
@@ -49,13 +59,12 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${active === nav.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => handleNavClick(nav)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -80,17 +89,11 @@ const Navbar = () => {
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                     }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                    
-                  }}
+                  onClick={() => handleNavClick(nav)}
                 >
-                    
-        
-                  {nav.id === "resume" ?  ( window.open(cvv ,'_blank') ): 
-                  <a  href={`#${nav.id}`}>{nav.title}</a>
-                }
+                  
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+               
                 </li>
               ))}
             </ul>
