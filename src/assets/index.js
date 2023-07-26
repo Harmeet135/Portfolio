@@ -14,6 +14,8 @@ import solidity from "./tech/solidity.png";
 import nextjs from "./tech/nextjs.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+import vue from "./tech/vue.png";
+import mysql from "./tech/mysql.png";
 
 import html1 from "./tech/html1.svg";
 import css1 from "./tech/css1.svg";
@@ -40,15 +42,14 @@ import threejs from "./tech/threejs.svg";
 import cplus from "./tech/cplus.png";
 import python from "./tech/python.png";
 
-import meta from "./company/meta.png";
 import ts from "./company/ts.png";
-import starbucks from "./company/starbucks.png";
 import amb from "./company/amb.png";
 
 import chatters from "./chatters.png";
 import electronic from "./electronic.png"
 import memories from "./memories.png";
-import shoestore from "./shoestore.png";
+// import shoestore from "./shoestore.png";
+import colordetection from "./colordectection.png";
 import taskify from "./taskify.png";
 
 import native from "./native.png";
@@ -90,16 +91,17 @@ export {
   solidity1,
   tailwind1,
   threejs,
-  meta,
   ts,
-  starbucks,
   amb,
-  shoestore,
+  // shoestore,
+  colordetection,
   taskify,
   chatters,
   electronic,
   memories,
   cplus,
   python,
+  vue,
+  mysql,
   native,
 };

@@ -21,6 +21,8 @@ import {
     html,
     css,
     reactjs,
+    vue,
+    mysql,
     redux,
     tailwind,
     nodejs,
@@ -28,11 +30,9 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
     amb,
     ts,
-    shoestore,
+    colordetection,
     taskify,
     chatters,
     electronic,
@@ -138,6 +138,8 @@ import {
       icon: cplus,
     },
  
+
+ 
   
   ];
 
@@ -202,6 +204,14 @@ import {
     {
       name: "cplus1",
       icon: cplus1,
+    },
+    {
+      name: "VueJs",
+      icon: vue,
+    },
+    {
+      name: "MySql",
+      icon: mysql,
     },
   
    
@@ -277,26 +287,29 @@ import {
       source_code_link: "https://github.com/Harmeet135/Socials",
     },
     {
-      name: "E - mart ",
+      name: "Strip Cololr Detection",
       description:
-        "E-Mart is a cutting-edge web application that brings the convenience of online shopping to your fingertips. With E-Mart, you can explore a vast collection of electronic products, purchase items with ease, and discover recommended and best-selling products tailored to your interests.",
+        "Strip Color Detection allows users to upload urine strip images and quickly extracts and analyzes the colors from the uploaded images for medical professionals and individuals monitoring their health.",
       tags: [
         {
-          name: "Nextjs",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "Sanity.io",
-        
+          name: "OpenCV",
           color: "green-text-gradient",
         },
-        // {
-        //   name: "Django",
-        //   color: "pink-text-gradient",
-        // },
+        {
+          name: "Django",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "ReactJs",
+          color: "yellow-text-gradient",
+        },
       ],
-      image: electronic,
-      source_code_link: "https://github.com/Harmeet135/Electonic-market-place",
+      image: colordetection,
+      source_code_link: "https://github.com/Harmeet135/Strip-Color-Detection",
     },
     {
       name: "Chatters",
@@ -320,16 +333,34 @@ import {
       source_code_link: "https://github.com/Harmeet135/Chatters",
     },
     {
+      name: "E - mart ",
+      description:
+        "E-Mart is a cutting-edge web application that brings the convenience of online shopping to your fingertips. With E-Mart, you can explore a vast collection of electronic products, purchase items with ease, and discover recommended and best-selling products tailored to your interests.",
+      tags: [
+        {
+          name: "Nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Sanity.io",
+        
+          color: "green-text-gradient",
+        },
+      ],
+      image: electronic,
+      source_code_link: "https://github.com/Harmeet135/Electonic-market-place",
+    },
+    {
       name: "Task Tracker",
       description:
         "TaskTracker is a convenient and efficient mobile application designed to help you stay organized and manage your tasks effectively. With TaskTracker, you can easily create, track, and mark tasks as completed, ensuring that you stay on top of your responsibilities and achieve your goals.",
       tags: [
         {
-          name: "Python",
+          name: "React Native",
           color: "blue-text-gradient",
         },
         {
-          name: "Django",
+          name: "Javascript",
           color: "green-text-gradient",
         },
         {
@@ -340,31 +371,7 @@ import {
       image: native,
       source_code_link: "https://github.com/Harmeet135/Goals-APP",
     },
-    {
-      name: "Spring Summer",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "Reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Redux-saga",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "yellow-text-gradient",
-        },
-      ],
-      image: shoestore,
-      source_code_link: "https://github.com/Harmeet135/Shoestore",
-    },
+   
     {
       name: "Taskify",
       description:
@@ -373,10 +380,6 @@ import {
         {
           name: "nextjs",
           color: "blue-text-gradient",
-        },
-        {
-          name: "Redux-saga",
-          color: "green-text-gradient",
         },
         {
           name: "Tailwindcss",
