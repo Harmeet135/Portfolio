@@ -24,7 +24,7 @@ const Tech = () => {
 
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-16">
         {tech.map((technology) => (
-          <div className="w-28 h-28 transform transition-all hover:z-10 hover:scale-110" key={technology.name} style={{ minWidth: '100px', minHeight: '100px' }}>
+          <div className=" flex items-center w-28 h-28 transform transition-all hover:z-10 hover:scale-110" key={technology.name} style={{ minWidth: '100px', minHeight: '100px' }}>
             <img
               src={technology.icon}
               alt={technology.name}
@@ -39,14 +39,6 @@ const Tech = () => {
 
 
       </div>
-      {/* <div className='flex flex-row flex-wrap justify-center gap-10 mt-16 '>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-         
-      ))}
-    </div> */}
     </>
   );
 };
