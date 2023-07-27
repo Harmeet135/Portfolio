@@ -255,7 +255,7 @@ import {
   //     name: "xyz",
   //     designation: "CFO",
   //     company: "Teckstack",
-  //     image: "https://randomuser.me/api/portraits/women/4.jpg",
+  //     image: "test.jpg",
   //   },
 
   // ];
