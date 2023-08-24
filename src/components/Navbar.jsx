@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import cvv from "../../src/assets/cvv.pdf"
+import cvv from "../../src/assets/harmeet_cv.pdf"
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        } w-full flex items-center py-5 fixed top-0 z-[60] ${scrolled ? "bg-primary" : "bg-transparent"
         }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -51,9 +51,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img src={logo} alt='logo' className='w-12 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Harmeet &nbsp;
+            {/* Harmeet &nbsp; */}
             <span className='sm:block hidden'></span>
           </p>
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
+              className={`${active === nav.title ? "text-[#915EFF]" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => handleNavClick(nav)}
             >

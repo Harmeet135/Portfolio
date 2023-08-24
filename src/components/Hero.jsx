@@ -1,9 +1,18 @@
 import { motion } from "framer-motion";
-
+// import Typed from "react-typed";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import about from "../assets/about.png";
+import { useTypewriter , Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: ['Web Developer', 'Full Stack Developer', 'Blockchain Developer'],
+    loop: { },
+    cursorStyle: '_',
+    deleteSpeed: 50,
+    typeSpeed: 70,
+    // delaySpeed: 1000,
+  });
   return (
     <section className={`relative w-full h-[78vh] xs:h-[87vh] mx-auto mb-4 lg:h-screen`}>
     <div
@@ -16,18 +25,19 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Harmeet</span>
+            Hi, I'm  <span className='text-[#915EFF]'>Harmeet</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a full stack developer <br className='sm:block hidden' />
+           <span className='text-[#915EFF]'>{text}<Cursor /></span><br className='sm:block hidden' />
             located in Delhi , India.
           </p>
+      
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0">
-        <ComputersCanvas />
+      <div className="absolute bottom-0 w-[15rem] right-[1rem] lg:w-[33rem] xs:w-[22rem]">
+
+        <img className="w-55" src={about} alt="" />
       </div>
- 
 
       <div className='absolute xs:bottom-[-5.5rem] top-[35rem] z-50 bottom-32 w-full flex justify-center items-center lg:top-[45.5rem] '>
         <a href='#about'>

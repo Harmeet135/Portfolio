@@ -18,18 +18,9 @@ import {
     cplus1,
     solidity1,
     tailwind1,
-    html,
-    css,
-    reactjs,
+    php,
     vue,
     mysql,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
     amb,
     ts,
     colordetection,
@@ -37,12 +28,8 @@ import {
     chatters,
     electronic,
     memories,
-    threejs,
-    solidity,
-    nextjs,
-    cplus,
-    python,
-    native,
+    hyperslice,
+    django,
   } from "../assets";
   
   export const navLinks = [
@@ -81,66 +68,6 @@ import {
       title: "Block chain Developer",
       icon: mobile,
     },
-  ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "python",
-      icon: python,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "solidity",
-      icon: solidity,
-    },
-    {
-      name: "nextjs",
-      icon: nextjs,
-    },
-
-    {
-      name: "cplus",
-      icon: cplus,
-    },
- 
-
- 
-  
   ];
 
   const tech = [
@@ -210,11 +137,18 @@ import {
       icon: vue,
     },
     {
+      name: "php",
+      icon: php,
+    },
+    {
       name: "MySql",
       icon: mysql,
     },
-  
-   
+    {
+      name: "django",
+      icon: django,
+    },
+      
   ]
 
   
@@ -247,18 +181,7 @@ import {
     },
   
   ];
-  
-  // const testimonials = [
-  //   {
-  //     testimonial:
-  //       "I thought it was impossible to make a website as beautiful as our product.",
-  //     name: "xyz",
-  //     designation: "CFO",
-  //     company: "Teckstack",
-  //     image: "test.jpg",
-  //   },
 
-  // ];
   
   const projects = [
     {
@@ -287,7 +210,7 @@ import {
       source_code_link: "https://github.com/Harmeet135/Socials",
     },
     {
-      name: "Strip Cololr Detection",
+      name: "Strip Color Detection",
       description:
         "Strip Color Detection allows users to upload urine strip images and quickly extracts and analyzes the colors from the uploaded images for medical professionals and individuals monitoring their health.",
       tags: [
@@ -310,6 +233,27 @@ import {
       ],
       image: colordetection,
       source_code_link: "https://github.com/Harmeet135/Strip-Color-Detection",
+    },
+    {
+      name: "HyperSlice",
+      description:
+        "Hyperslice is a web application that functions as a link shortener, enabling users to create short and manageable links for longer URLs. The name Hyperslice is derived from the first word in HTTP, which stands for Hypertext Transfer Protocol, the foundation of data communication on the World Wide Web, and slice, referencing the action of dividing or cutting a link to make it shorter.",
+      tags: [
+        {
+          name: "VueJs 3",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "green-text-gradient",
+        },
+        {
+          name: "NodeJs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: hyperslice,
+      source_code_link: "https://github.com/Harmeet135/link_shortener",
     },
     {
       name: "Chatters",
@@ -350,27 +294,7 @@ import {
       image: electronic,
       source_code_link: "https://github.com/Harmeet135/Electonic-market-place",
     },
-    {
-      name: "Task Tracker",
-      description:
-        "TaskTracker is a convenient and efficient mobile application designed to help you stay organized and manage your tasks effectively. With TaskTracker, you can easily create, track, and mark tasks as completed, ensuring that you stay on top of your responsibilities and achieve your goals.",
-      tags: [
-        {
-          name: "React Native",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Javascript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: native,
-      source_code_link: "https://github.com/Harmeet135/Goals-APP",
-    },
+   
    
     {
       name: "Taskify",
@@ -395,4 +319,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences,  projects , tech };
+  export { services, experiences,  projects , tech };

@@ -102,10 +102,7 @@ const Works = () => {
           <motion.div >
             <ProjectCard
               key={`project-${index}`}
-              // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-              // animate="show"
               custom={index}  {...project}
-              // variants={showAll ? fadeIn("up", "spring", index * 0.5, 0.75) : fadeOut("up", "spring", index * 0.5, 0.75)}
               initial="hidden"
               animate="show"
               exit="exit"
