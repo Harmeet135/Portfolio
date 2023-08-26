@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
            <span className='text-[#915EFF]'>{text}<Cursor /></span><br className='sm:block hidden' />
-            located in Delhi , India.
+           <p>located in Delhi , India.</p> 
           </p>
       
         </div>

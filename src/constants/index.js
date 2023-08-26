@@ -23,6 +23,8 @@ import {
     mysql,
     amb,
     ts,
+    ttm,
+    Ttm,
     colordetection,
     taskify,
     chatters,
@@ -154,10 +156,25 @@ import {
   
   const experiences = [
     {
+      title: "MERN Stack Developer",
+      company_name: "The Tech Musketeers",
+      icon: ttm,
+      iconBg: "#E6DEDD",
+      date: "Aug 2023 - Present",
+      points: [
+        "Successfully integrated Stripe payment methods, broadening the spectrum of secure and user-friendly payment choices .",
+        "Implemented a robust pagination system and advanced search functionalities, elevating the user experience .",
+        "Diagnosed and effectively resolved intricate technical issues, ensuring uninterrupted platform operation and elevating user satisfaction through seamless functionality.",
+        "Successfully implemented a promocode redeeming system, enhancing user engagement and marketing capabilities.",
+      ],
+    },
+    {
       title: "Next.js Developer",
       company_name: "Add My Brand",
       icon: amb,
-      iconBg: "#E6DEDD",
+     
+      iconBg: "linear-gradient(28deg, rgba(72,176,228,1) 16%, rgba(253,29,243,1) 34%, rgba(223,67,162,1) 72%, rgba(179,98,43,1) 92%)" ,    
+      // iconBg: "#E6DEDD",
       date: "Jan 2023 - March 2023",
       points: [
         "Developing and maintaining web applications using Next.js and other related technologies.",

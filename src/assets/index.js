@@ -46,6 +46,8 @@ import python from "./tech/python.png";
 
 import ts from "./company/ts.png";
 import amb from "./company/amb.png";
+import Ttm from "./company/Ttm.png";
+import ttm from "./company/ttm.jpeg";
 
 import chatters from "./chatters.png";
 import electronic from "./electronic.png"
@@ -98,6 +100,8 @@ export {
   php,
   ts,
   amb,
+  Ttm,
+  ttm,
   colordetection,
   taskify,
   chatters,
