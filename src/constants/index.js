@@ -160,7 +160,7 @@ import {
       company_name: "The Tech Musketeers",
       icon: ttm,
       iconBg: "#E6DEDD",
-      date: "Aug 2023 - Present",
+      date: "Aug 2023 - Sept 2023",
       points: [
         "Successfully integrated Stripe payment methods, broadening the spectrum of secure and user-friendly payment choices .",
         "Implemented a robust pagination system and advanced search functionalities, elevating the user experience .",
