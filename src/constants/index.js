@@ -32,6 +32,9 @@ import {
     memories,
     hyperslice,
     django,
+    cypress,
+    stripe,
+    supabase,
   } from "../assets";
   
   export const navLinks = [
@@ -150,6 +153,14 @@ import {
       name: "django",
       icon: django,
     },
+    {
+      name: "stripe",
+      icon: stripe,
+    },
+    {
+      name: "supabase",
+      icon: supabase,
+    },
       
   ]
 
@@ -160,7 +171,7 @@ import {
       company_name: "The Tech Musketeers",
       icon: ttm,
       iconBg: "#E6DEDD",
-      date: "Aug 2023 - Sept 2023",
+      date: "April 2023 - Sept 2023",
       points: [
         "Successfully integrated Stripe payment methods, broadening the spectrum of secure and user-friendly payment choices .",
         "Implemented a robust pagination system and advanced search functionalities, elevating the user experience .",
@@ -175,7 +186,7 @@ import {
      
       iconBg: "linear-gradient(28deg, rgba(72,176,228,1) 16%, rgba(253,29,243,1) 34%, rgba(223,67,162,1) 72%, rgba(179,98,43,1) 92%)" ,    
       // iconBg: "#E6DEDD",
-      date: "Jan 2023 - March 2023",
+      date: "Jan 2023 - Feb 2023",
       points: [
         "Developing and maintaining web applications using Next.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -201,6 +212,38 @@ import {
 
   
   const projects = [
+    {
+      "name": "Cypress: Real-time Collaboration Web App",
+      "description": "Cypress is a collaboration platform, enabling real-time, simultaneous document editing and project management for teams. It combines live cursor tracking, secure authentication, and efficient subscription handling through Stripe to provide a seamless user experience. ",
+      "tags": [
+        {
+          "name": "Next.js",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "Supabase",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "TypeScript",
+          "color": "pink-text-gradient"
+        },
+        {
+          "name": "Stripe",
+          "color": "yellow-text-gradient"
+        },
+        {
+          "name": "Sockets",
+          "color": "orange-text-gradient"
+        },
+        {
+          "name": "Tailwind CSS",
+          "color": "blue-text-gradient"
+        }
+      ],
+      "image": cypress, 
+      "source_code_link": "https://github.com/Harmeet135/cypress" 
+    },
     {
       name: "Socials",
       description:

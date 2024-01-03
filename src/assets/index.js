@@ -31,6 +31,8 @@ import solidity1 from "./tech/solidity1.png";
 import tailwind1 from "./tech/tailwind1.svg";
 import react1 from "./tech/react1.png";
 import cplus1 from "./tech/cplus1.png";
+import stripe from "./tech/stripe.svg";
+import supabase from "./tech/supabase.png";
 
 import django from "./tech/django.svg";
 import javascript from "./tech/javascript.png";
@@ -55,6 +57,7 @@ import memories from "./memories.png";
 import colordetection from "./colordectection.png";
 import hyperslice from "./hyperslice.png";
 import taskify from "./taskify.png";
+import cypress from "./cypress.png";
 
 import native from "./native.png";
 
@@ -80,6 +83,7 @@ export {
   nodejs,
   reactjs,
   react1,
+  stripe,
   django,
   redux,
   tailwind,
@@ -97,6 +101,7 @@ export {
   solidity1,
   tailwind1,
   threejs,
+  supabase,
   php,
   ts,
   amb,
@@ -112,4 +117,5 @@ export {
   vue,
   mysql,
   native,
+  cypress
 };

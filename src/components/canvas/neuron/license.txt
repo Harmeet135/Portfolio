@@ -1,0 +1,11 @@
+Model Information:
+* title:	Neuron
+* source:	https://sketchfab.com/3d-models/neuron-03a5173f3d2e46958b6f8be81b1c88be
+* author:	mmarynguyen (https://sketchfab.com/mmarynguyen)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Neuron" (https://sketchfab.com/3d-models/neuron-03a5173f3d2e46958b6f8be81b1c88be) by mmarynguyen (https://sketchfab.com/mmarynguyen) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
