@@ -141,10 +141,10 @@ import {
       name: "VueJs",
       icon: vue,
     },
-    {
-      name: "php",
-      icon: php,
-    },
+    // {
+    //   name: "php",
+    //   icon: php,
+    // },
     {
       name: "MySql",
       icon: mysql,
